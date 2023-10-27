@@ -302,20 +302,28 @@ padding: 1rem;
 appearance: none;
 }
 
-.formulario__submit{
-    background-color: var(--secuendario);
+.formulario__submit {
+    background-color: var(--secundario); /* Color de fondo secundario (amarillo) */
     border: none;
     font-size: 2rem;
     font-family: var(--fuentePrincipal);
     padding: 2rem;
-    transition: background-color .3s ease; 
-    grid-column: 1/3; 
+    transition: background-color 0.3s ease, transform 0.3s; /* Agrega la transición al color de fondo y al zoom */
+    grid-column: 1/3;
 }
 
-.formulario__submit:hover{
+.formulario__submit:hover {
     cursor: pointer;
-    background-color: var(--secundarioOscuro);
+    background-color: var(--secundarioOscuro); /* Cambia el color de fondo en hover */
+    transform: scale(1.1); /* Aplica un zoom del 110% al botón en hover */
 }
+
+
+
+
+
+
+
 
 
 /*Cambios para hacer Zoom en las imagenes */
