@@ -37,6 +37,7 @@ a{
 
 img{
    width: 100%;
+   transition: transform 0.3s;
 }
 
 .contenedor{
@@ -161,6 +162,45 @@ margin: top 2rem;
     line-height: 4rem;
 }
 
+/* Aplica estilos al contenedor del producto, si es necesario */
+.producto {
+    /* Estilos para el contenedor del producto */
+}
+
+/* Aplica un efecto de zoom a la imagen cuando se pasa el mouse sobre ella */
+.producto__imagen {
+    transition: transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega un sombreado suave */
+}
+
+.producto__imagen:hover {
+    transform: scale(1.2); /* Escala la imagen al 120% en el hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombreado ligeramente más pronunciado en el hover */
+}
+
+/* Estilos para la información del producto, si es necesario */
+.producto__info {
+    /* Estilos para la información del producto */
+}
+.slider-container img {
+    scroll-snap-align: center;
+  }
+  .slider-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow-x: scroll;
+  }
+  
+  .slider-container img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+
+
 /*   Graficos   */
 .graficos{
     min-height: 30rem;
@@ -171,7 +211,8 @@ margin: top 2rem;
 .graficos--camisas{
     grid-row: 2 /3;
     background-image: url(../img/grafico1.jpg);
-    
+    transition: transform 0.3s;
+     
 }
 .graficos--node{
     background-image: url(../img/grafico2.jpg);
@@ -207,7 +248,7 @@ margin: top 2rem;
 @media (min-width: 768px) {
     .nosotros_imagen{
         grid-column: 2 / 3;
-        padding: left 1rem;
+        padding: left 1rem ;
     }
     
 }
@@ -238,8 +279,12 @@ margin: top 2rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
+        transition: transform 0.3s;
+     
     }
 }
+
+
 
 .formulario{
     display: grid;
@@ -271,6 +316,24 @@ appearance: none;
     cursor: pointer;
     background-color: var(--secundarioOscuro);
 }
+
+
+/*Cambios para hacer Zoom en las imagenes */
+.camisa {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+
+.camisa__imagen {
+    transition: transform 0.3s;
+}
+
+.camisa__imagen:hover {
+    transform: scale(1.2);
+}
+
+
 
 
 
