@@ -8,7 +8,10 @@
 
     --fuentePrincipal: font-family: 'Staatliches', cursive;
 }
-
+#container{
+    background-color: #9c27b0;
+    width: 50%;
+}
 html{
     box-sizing: border-box;
     font-size: 62.5%;
@@ -21,7 +24,7 @@ html{
 /*Globales*/
 
 body{
-    background-color: var(--primario);
+    background-color: #9c27b0;
     font-size: 1.6rem;
     line-height: 1.5;
 }
@@ -94,7 +97,11 @@ h3{
 
 Asegúrate de agregar estos estilos en tu archivo CSS para controlar la disposición del formulario de búsqueda. Esto debería alinear el formulario a la izquierda, independientemente de otros elementos en el encabezado. **/
 
-
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 60%;
+      margin: auto;
+  }
 
 /*Footer*/
 .footer{
@@ -198,6 +205,9 @@ margin: top 2rem;
     object-fit: cover;
   }
 
+   #carousel-inner{
+    height: 50%;
+   }
 
 
 
