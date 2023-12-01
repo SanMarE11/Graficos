@@ -64,38 +64,32 @@ h3{
     font-size: 2.4rem;
 }
 
-/**Header**/
-.header{
+.header {
+    background-color: var(--primarioOscuro);
+    padding: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.header__logo{
-    margin: 3rem 0;
+.header {
+    background-color: var(--primarioOscuro);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    max-width: 150px; /* Ajusta el tamaño del logo según sea necesario */
+    margin: 0 auto; /* Centra el logotipo */
 }
 
 .header__search-form {
     display: flex;
-    align-items: center; /* Centra verticalmente el formulario */
-    margin-left: auto; /* Empuja el formulario hacia la izquierda */
+    align-items: center;
 }
-
-.header__search-form input[type="text"] {
-    padding: 5px; /* Añade un espacio interno al campo de entrada */
-    border: 1px solid #ccc; /* Establece un borde para el campo de entrada */
-}
-
-.header__search-form button {
-    background-color: #007bff; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
-    border: none; /* Elimina el borde del botón */
-    padding: 5px 10px; /* Espacio interno alrededor del botón */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
-    margin-left: 10px; /* Agrega espacio entre el campo de entrada y el botón */
-}
-/**Con el margin-left: auto; en la regla .header__search-form, el formulario se alineará a la izquierda del encabezado, incluso si tienes otros elementos en el encabezado, como los enlaces de navegación en tu <nav>. Esto asegura que el formulario se coloque en la esquina izquierda del encabezado.
-
-Asegúrate de agregar estos estilos en tu archivo CSS para controlar la disposición del formulario de búsqueda. Esto debería alinear el formulario a la izquierda, independientemente de otros elementos en el encabezado. **/
+/* Resto del CSS para el formulario de búsqueda... */
 
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -103,37 +97,72 @@ Asegúrate de agregar estos estilos en tu archivo CSS para controlar la disposic
       margin: auto;
   }
 
-/*Footer*/
-.footer{
-background-color: var(--primarioOscuro);
-padding: 1rem 0;
-margin: top 2rem;
+/* Estilos para el footer */
+.footer {
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+    text-align: center; /* Centrar contenido */
 }
 
-.footer__texto{
+.footer__texto {
     font-family: var(--fuentePrincipal);
-    text-align: center;
+    text-align: center; /* Asegura que el texto también esté centrado */
     font-size: 2.2rem;
 }
 
-.navegacion{
- background-color: var(--primarioOscuro);
- padding: 2rem 0;
- display: flex;
- justify-content: center;
- gap: 2rem;
-
+/* Estilos para el contenido dentro del footer */
+.footer__contenido {
+    margin-top: 20px; /* Espacio entre el texto y el contenido */
+    /* Otros estilos... */
 }
 
-.navegacion__enlace{
+/* Estilos para los enlaces del footer */
+.footer__enlaces ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Alineación del texto al centro */
+}
+
+.footer__enlaces ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer__enlaces ul li a {
+    text-decoration: none;
+    font-weight: bold; /* Texto en negritas */
+    font-size: 1.2em; /* Tamaño del texto más grande */
+    color: var(--secuendario); /* Color del texto */
+}
+
+
+.navegacion {
+    background-color: var(--primarioOscuro);
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alineación vertical */
+}
+
+.navegacion__enlace {
     font-family: var(--fuentePrincipal);
     color: var(--blanco);
     font-size: 3rem;
+    margin: 0 1rem; /* Espacio entre los enlaces */
 }
+
 .navegacion__enlace--activo,
-.navegacion__enlace:hover{
+.navegacion__enlace:hover {
     color: var(--secuendario);
 }
+
+.header__search-form {
+    margin-left: auto; /* Empuja el formulario hacia la derecha */
+}
+
+
+
 /*Grid*/
 .grid{
     display: grid;
@@ -350,6 +379,29 @@ appearance: none;
 .camisa__imagen:hover {
     transform: scale(1.2);
 }
+
+.texto-negrita {
+    font-weight: bold;
+    font-size: 1.2em; /* Tamaño del texto un poco más grande */
+    letter-spacing: 1px;
+  }
+
+  .whatsapp-button {
+    width: 10rem; /* Cambia el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+    right: 20px; /* Ajusta la distancia desde el borde izquierdo */
+    z-index: 999; /* Para asegurarse de que esté por encima de otros elementos */
+}
+
+/* Estilos para los iconos del footer */
+.icono-footer {
+    width: 30px; /* Tamaño general para los iconos */
+    height: auto; /* Mantiene la proporción */
+}
+
+
 
 
 

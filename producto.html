@@ -26,11 +26,15 @@
     
     
    
-    <header class="header">
-        <a href="index.html">
-            <img class="header__logo" src="img/logo.png" alt="Logotipo">
-        </a>
-    </header>
+  <header class="header">
+    <a href="index.html">
+        <img class="header__logo" src="img/logo.png" alt="Logotipo">
+    </a>
+    <form class="header__search-form" action="buscar.php" method="get">
+        <input type="text" name="q" placeholder="Buscar...">
+        <button type="submit">Buscar</button>
+    </form>
+</header>
 
     <nav class="navegacion">
         <a class="navegacion__enlace navegacion__enlace--activo " href="index.html">Tienda</a>
@@ -136,8 +140,32 @@
     </main>
 
     <footer class="footer">
-        <p class="footer__texto">Front End Store - Todos los derechos reservados 2022</p>
-    </footer>
+      <p class="footer__texto">Front End Store - Todos los derechos reservados 2022</p>
+      <div class="footer__enlaces">
+          <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="index.html">Productos</a></li>
+              <li><a href="nosotros.html">Servicios</a></li>
+              <li><a href="ubicaciones.html">Contacto</a></li>
+          </ul>
+      </div>
+      <div class="footer__contacto">
+          <p>Contáctanos:</p>
+          <p>Email: info@frontendstore.com</p>
+          <p>Teléfono: +123456789</p>
+      </div>
+      <div class="footer__redes">
+          <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="Icono de Facebook" class="icono-footer"></a>
+          <a href="https://twitter.com" target="_blank"><img src="img/twitter.png" alt="Icono de Twitter" class="icono-footer"></a>
+          <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="Icono de Instagram" class="icono-footer"></a>
+      </div>
+      
+      </div>
+  </footer>
+
+  <a href="https://wa.me/523316376734?text=Hola" target="_blank" class="whatsapp-button">
+      <img src="img/icono_WhatsApp.png" alt="Contacto por WhatsApp">
+  </a>
 
 </body>
 </html>

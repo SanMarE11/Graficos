@@ -15,6 +15,10 @@
         <a href="index.html">
             <img class="header__logo" src="img/logo.png" alt="Logotipo">
         </a>
+        <form class="header__search-form" action="buscar.php" method="get">
+            <input type="text" name="q" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+        </form>
     </header>
 
     <nav class="navegacion">
@@ -27,19 +31,20 @@
         <h1>Nosotros</h1>
 
         <div class="nosotros">
+            <p class="texto-negrita">Sobre Nosotros</p>
             <div class="nosotros_contenido">
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Provident maiores, eos fugiat non magnam, omnis suscipit nobis
-                  iste explicabo beatae qui! Fugiat recusandae dolor pariatur asperiores debitis, 
-                  doloribus exercitationem quasi!</p>   
+               <p>En CodeShirts, fusionamos la pasión por la programación con la moda contemporánea.
+                 Nuestro objetivo es llevar la creatividad y la expresión del mundo de la programación 
+                 a través de nuestras exclusivas playeras con logos de los lenguajes más emblemáticos.</p>   
                   
                   <P>  
-                    Provident maiores, eos fugiat non magnam, omnis suscipit nobis
-                    iste explicabo beatae qui! Fugiat recusandae dolor pariatur asperiores debitis, 
-                    doloribus exercitationem quasi! 
-                      Provident maiores, eos fugiat non magnam, omnis suscipit nobis
-                    iste explicabo beatae qui! Fugiat recusandae dolor pariatur asperiores debitis, 
-                    doloribus exercitationem quasi!</P>
+                    Nos comprometemos a ofrecer diseños únicos y de calidad que reflejen la esencia 
+                    y la belleza del código. En CodeShirts, cada estampado es cuidadosamente seleccionado 
+                    para capturar la esencia y la elegancia de los lenguajes de programación más utilizados.
+                </P>
+                <p>Nuestro equipo está compuesto por entusiastas de la tecnología y la moda que trabajan 
+                    incansablemente para ofrecer una experiencia de compra excepcional. Estamos aquí para 
+                    acompañarte en tu viaje, vistiendo tu pasión por el código.</p>
             </div>
             <img class="nosotros_imagen" src="img/nosotros.jpg" alt="Nosotros">
         </div>
@@ -84,11 +89,33 @@
             </div>      <!--Cierre de bloquesss-->
         </section>
 
-    <footer class="footer">
-        <p class="footer__texto">Front End Store - Todos los derechos reservados 2022</p>
-        <div></div>
+        <footer class="footer">
+            <p class="footer__texto">Front End Store - Todos los derechos reservados 2022</p>
+            <div class="footer__enlaces">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html">Productos</a></li>
+                    <li><a href="nosotros.html">Servicios</a></li>
+                    <li><a href="ubicaciones.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__contacto">
+                <p>Contáctanos:</p>
+                <p>Email: info@frontendstore.com</p>
+                <p>Teléfono: +123456789</p>
+            </div>
+            <div class="footer__redes">
+                <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="Icono de Facebook" class="icono-footer"></a>
+                <a href="https://twitter.com" target="_blank"><img src="img/twitter.png" alt="Icono de Twitter" class="icono-footer"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="Icono de Instagram" class="icono-footer"></a>
+            </div>
+            
+            </div>
+        </footer>
     
-    </footer>
+        <a href="https://wa.me/523316376734?text=Hola" target="_blank" class="whatsapp-button">
+            <img src="img/icono_WhatsApp.png" alt="Contacto por WhatsApp">
+        </a>
 
 </body>
 </html>
